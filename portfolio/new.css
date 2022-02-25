@@ -1,0 +1,132 @@
+/*----------------------------------------------------------------------*/
+.newsletter form input:last-child{
+    box-shadow: opx opx 5px #000, opx opx 15px #858585;
+}
+.card{
+    box-shadow: 2px .8rem 1rem rgba(0,0,0,.05);
+
+}
+/*shadow
+in this code box-shadow property is used to apply one shadows to an element p13 15.*/
+/*---------------------------------------*/
+.description::first-letter{
+    margin-left: 1rem;
+}
+.skills .title::before{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+/* pseudo element
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text pg 16 17*/
+/*---------------------------------*/
+nav ul li a:hover{
+    color: red;
+    transition: .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+/*user action pseudo class
+:hover - Matches when a user designates an item with a pointing device, for example holding the mouse pointer over it. pg 12*/
+/*-------------------------------------*/
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid red;
+    outline: none;
+    border-radius: 30px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color:red;
+    color: white;
+    box-shadow: opx opx 5px #000, opx opx 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+/*structural selector
+:first-child
+Matches an element that is the first of its siblings.
+:last-child
+Matches an element that is the last of its siblings.* pg 13/
+/*----------------------------------*/
+.card{
+    display: flexbox;
+    flex-direction: column;
+    box-shadow: 2px .8rem 1rem rgba(0,0,0,.05);
+    margin-bottom: 3rem;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.image-data{
+    height: 25rem;
+    position: relative;
+    z-index: 1;
+}
+/*-----------------------------------*/
+#logo path:nth-child(1){
+    animation: line-anim 2s ease forwards;
+}
+/*Nth pseudo class
+The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent. pg 23
+*/
+
+/*-----------------------------------------*/
+input:invalid {
+    border: 2px solid red;
+}
+  
+input:invalid + span::before {
+    content: '✖';
+    color: red;
+}
+  
+input:valid + span::before {
+    content: '✓';
+    color: green;
+}
+/*validity pseudo class
+The :valid CSS pseudo-class represents any <input> or other <form> element whose contents validate successfully. pg 22
+*/
+/*----------------------------*/
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    color: #111;
+    font-weight: 500;
+    font-size: 18px;
+}
+/*-------------------------------------*/
+/*The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.*/
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: red;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
